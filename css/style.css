@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&family=The+Nautigal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Pushster&family=Roboto:wght@300&family=The+Nautigal&display=swap');
+
+:root{
+    --black: rgb(12, 9, 49);
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: all .2s linear;
+    font-weight: normal;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+    padding:0 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn{
+    text-shadow: 0 0 1.5px white, 0 0 3px #01ff01;
+    box-shadow: 0 0 20px #01ff01;
+    font-size: 16px;
+    /*font-weight: 500;*/
+    padding: 12px 35px;
+    color: #01ff01;
+    border-radius: 40px;
+    display: inline-block;
+    /*white-space: nowrap;*/
+    border: 4px solid #01ff01;
+    /*background: yellow;*/
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background: #01ff01;
+    box-shadow: 0 0 20px 10px #01ff01;
+    color: white;
+    transform: scale(1.05);
+}
+
+header{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+    width:100%;
+    background: black;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar{
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+}
+
+header .navbar a{
+    font-size: 150%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #f7100a;               
+}
+
+header .navbar a:hover{
+    background: #f7100a;    
+    box-shadow: 0 0 20px 10px #f7100a; 
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#menu{
+    font-size: 3rem;
+    color:#444;
+    cursor: pointer;
+    display: none;
+}
+
+header .scroll-bar{
+    position: absolute;
+    top:100%; left: 0;
+    box-shadow: 0 0 10px #e5ff00;
+    height: 7.5px;
+    background: #e5ff00;
+    width:0;
+}
+
+body{
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Montero', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    /*text-decoration: none;*/
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+.section{
+    background: rgb(20, 20, 20);
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+}
+.hidden
+{
+    display: none !important;
+}
+.padd-15
+{
+    padding-left: 15px;   /*change size*/
+    padding-right: 15px;  /*change size*/
+}
+.container
+{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.section .container
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2
+{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+/* home */
+.home{
+    min-height: 100vh;
+    display: flex;
+    color: white;
+}
+.home .home-info{
+    flex: 0 0 60%;
+    max-width: 80%;
+}
+h3.hello{
+    font-size: 28px;
+    margin: 15px 0;
+}
+h3.hello span{
+    font-family: 'Pushster', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000096;
+}
+.home-info p{
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: white;
+}
+.home .home-img{
+    flex: 0 0 40%;
+    max-width: 50%;
+    text-align: center;
+    position: relative;
+}
+.home .home-img img{
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 10px black; 
+    height: 400px;
+    width: 400px;
+}
+
+/* About */
+.about .container
+{
+    padding-bottom: 40px;
+}
+.about .about-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.about .about-heading h2
+{
+    color: white;
+    font-weight: 500;
+}
+.about .stone-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.about .power-item-inner
+{
+    box-shadow: 0 0 20px 10px #bb13fe;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.about .space-item-inner
+{
+    box-shadow: 0 0 20px 10px #000096;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.about .reality-item-inner
+{
+    box-shadow: 0 0 20px 10px #f7100a;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.about .soul-item-inner
+{
+    box-shadow: 0 0 20px 10px #fe5401;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.about .time-item-inner
+{
+    box-shadow: 0 0 20px 10px #01ff01;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.about .mind-item-inner
+{
+    box-shadow: 0 0 20px 10px #e5ff00;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.about .power-item-inner .stone-img img
+{
+    width: 100%;
+    display: block;
+    transition: 1s;
+    cursor: pointer;
+}
+.about .space-item-inner .stone-img img
+{
+    width: 100%;
+    display: block;
+    transition: 1s;
+    cursor: pointer;
+}
+.about .reality-item-inner .stone-img img
+{
+    width: 100%;
+    display: block;
+    transition: 1s;
+    cursor: pointer;
+}
+.about .soul-item-inner .stone-img img
+{
+    width: 100%;
+    display: block;
+    transition: 1s;
+    cursor: pointer;
+}
+.about .time-item-inner .stone-img img
+{
+    width: 100%;
+    display: block;
+    transition: 1s;
+    cursor: pointer;
+}
+.about .mind-item-inner .stone-img img
+{
+    width: 100%;
+    display: block;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.stone-img img:hover{
+    transform: scale(1.3);
+}
+
+/* Snap */
+.snap .snap-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.snap .snap-content .snap-text
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.snap .snap-content .snap-text h3
+{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+}
+.snap .snap-content .snap-text h3 span
+{
+    color: white;
+}
+.snap .snap-content .snap-text p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+}
+.snap .snap-content .thanos
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+.snap .snap-content .thanos .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.snap .snap-content .thanos .info-item p
+{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.snap .snap-content .thanos .info-item p span
+{
+    font-weight: 400;
+    color: #bb13fe;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.snap .snap-content .stoneline
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.snap .snap-content h3.title 
+{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: white;
+}
+.snap .snap-content .stoneline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.snap .snap-content .snapline
+{
+    background-color: rgb(20, 20, 20);
+    padding: 30px 15px;
+    border: 2px solid #fe5401;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.snap .snap-content .snapline .snapline-item
+{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.snap .snap-content .snapline .snapline-item:last-child
+{
+    padding-bottom: 0;
+}
+.snap .snap-content .snapline .snapline-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: white;
+}
+.snap .snap-content .snapline .power-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #bb13fe;
+}
+.snap .snap-content .snapline .space-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #000096;
+}
+.snap .snap-content .snapline .reality-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #f7100a;
+}
+.snap .snap-content .snapline .soul-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fe5401;
+}
+.snap .snap-content .snapline .time-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #01ff01;
+}
+.snap .snap-content .snapline .mind-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #e5ff00;
+}
+.snap .snap-content .snapline .power-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #bb13fe;
+}
+.snap .snap-content .snapline .power-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: #bb13fe;
+}
+.snap .snap-content .snapline .space-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #000096;
+}
+.snap .snap-content .snapline .space-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: #000096;
+}
+.snap .snap-content .snapline .reality-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #f7100a;
+}
+.snap .snap-content .snapline .reality-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: #f7100a;
+}
+.snap .snap-content .snapline .soul-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #fe5401;
+}
+.snap .snap-content .snapline .soul-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: #fe5401;
+}
+.snap .snap-content .snapline .time-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #01ff01;
+}
+.snap .snap-content .snapline .time-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: #01ff01;
+}
+.snap .snap-content .snapline .mind-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #e5ff00;
+}
+.snap .snap-content .snapline .mind-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: #e5ff00;
+}
+
+.snap .glove
+{
+    width: 40%;
+    margin-left: auto;
+    margin-top: 50px;
+}
+.snap .glove-inner .glove-img img
+{
+    width: 100%;
+    display: block;
+    transition: 1s;
+    cursor: pointer;
+}
+.glove-img img:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:1199px)
+{
+    .main-content
+    {
+        padding-left: 0;
+    }
+    .snap .snap-content .personal-info .info-item p span 
+    {
+        display: block;
+        margin-left: 0;
+    }
+}
+@media (max-width:991px)
+{
+    .home .home-info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img
+    {
+        display: none;
+    }
+}
+@media (max-width:767px)
+{
+    .snap .snap-content .education,
+    .snap .snap-content .skills,
+    .snap .snap-content .personal-info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
